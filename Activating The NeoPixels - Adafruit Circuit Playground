@@ -1,0 +1,75 @@
+input.touchA1.onEvent(ButtonEvent.Click, function () {
+    light.showRing(
+        `black black black black black black red blue black black`
+    )
+    for (let i = 0; i < 3; i++) {
+        light.showAnimation(light.cometAnimation, 2000)
+        music.magicWand.play()
+        music.setVolume(195)
+    }
+    for (let i = 0; i < 4; i++) {
+        music.magicWand.play()
+        music.setVolume(220)
+    }
+    light.setAll(0xb09eff)
+    light.setBrightness(8)
+    light.showAnimation(light.sparkleAnimation, 200)
+    light.showRing(
+        `black yellow black yellow black black yellow black yellow black`
+    )
+    for (let i = 0; i < 3; i++) {
+        music.jumpUp.play()
+    }
+})
+input.touchA2.onEvent(ButtonEvent.Click, function () {
+    light.showRing(
+        `black black black black black black black red blue black`
+    )
+    for (let i = 0; i < 5; i++) {
+        light.showAnimation(light.colorWipeAnimation, 500)
+        music.powerUp.play()
+        music.setVolume(226)
+    }
+    light.setAll(0xb09eff)
+    light.setBrightness(8)
+    for (let i = 0; i < 10; i++) {
+        music.setVolume(206)
+        music.powerUp.play()
+        light.showAnimation(light.sparkleAnimation, 200)
+    }
+    light.showRing(
+        `black orange black orange black black orange black orange black`
+    )
+    for (let i = 0; i < 3; i++) {
+        music.siren.play()
+    }
+})
+input.touchA3.onEvent(ButtonEvent.Click, function () {
+    light.showRing(
+        `black black black black black black black black red blue`
+    )
+    for (let i = 0; i < 5; i++) {
+        light.showAnimation(light.sparkleAnimation, 500)
+        music.siren.play()
+        music.setVolume(218)
+    }
+    light.setAll(0xb09eff)
+    light.setBrightness(8)
+    for (let i = 0; i < 10; i++) {
+        music.setVolume(255)
+        light.showAnimation(light.colorWipeAnimation, 500)
+        music.jumpUp.play()
+    }
+    light.showRing(
+        `black pink red pink black black pink red pink black`
+    )
+    for (let i = 0; i < 3; i++) {
+        music.setVolume(255)
+        light.showAnimation(light.theaterChaseAnimation, 1000)
+        music.jumpUp.play()
+        light.showAnimation(light.sparkleAnimation, 200)
+    }
+})
+forever(function () {
+
+})
